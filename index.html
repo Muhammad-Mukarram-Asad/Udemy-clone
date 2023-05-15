@@ -24,9 +24,48 @@
         <input type="text" placeholder="Search for anything">
         <p id="header-p2">Teach on Udemy</p>
         <i class="fa-solid fa-cart-shopping"></i>
-        <button class="header-button btn-1" type="button">Log in</button>
-        <button class="header-button btn-2" type="button">Sign up</button>
+        <button class="header-button btn-1" type="button" onclick="Open_Login_Div()">Log in</button>
+        <button class="header-button btn-2" type="button" >Sign up</button>
     </div>
+
+            <!-- LogIn Div Starts Here -->
+
+    <div id="login_div" style="display: none;">
+        <form>
+            <img id="cross_sign" onclick="Hide_Login_Div()" src="https://cdn.onlinewebfonts.com/svg/img_406531.png" alt="cancel_div_icon"/>
+            
+            <h1>Welcome to Udemy</h1>
+            <div class="login_inner_divs">
+                <label>Username or Email:</label>
+                <input type="email" placeholder="Email Address" />
+            </div>
+
+            <div class="login_inner_divs">
+                <label>Password:</label>
+                <input type="password" placeholder="Password" />
+            </div>
+
+            <div class="login_inner_divs">
+                <button type="button" id="login_btn" onclick="signIn()">Sign in</button>
+            </div>
+        </form>
+    </div>
+
+            <!-- LogIn Div Ends Here -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <div class="second-part">
         <div class="second-part-1">
@@ -291,7 +330,7 @@
             <div class="box">
                 <img src="https://s.udemycdn.com/home/top-categories/lohp-category-development-v2.jpg" alt="">
             </div>
-            <h2> Desvelopment</h2>
+            <h2> Development</h2>
         </div>
 
         <div class="sec-6-boxes">
@@ -468,6 +507,8 @@
          <p>&COPY; 2022 Udemy,Inc.</p>
          <button id="footer-button">English</button>
     </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
