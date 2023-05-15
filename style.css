@@ -83,6 +83,27 @@
     border: 2px solid black;
 }
 
+
+#signup_div{
+    width: 60%;
+    height: 60%;
+    display: block;
+    margin: 20px auto;
+    background-color: #707571;
+    padding: 10px;
+}
+
+#signup_div > form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    background-color: whitesmoke;
+    margin-left: 26%;
+    border-radius: 20px;
+}
 #login_div{
     width: 60%;
     height: 60%;
@@ -91,6 +112,7 @@
     background-color: #707571;
     padding: 10px;
 }
+
 
 #login_div > form{
     display: flex;
@@ -112,7 +134,7 @@
     text-align: center;
 }
 
-#cross_sign{
+#cross_sign_1, #cross_sign_2{
     mix-blend-mode: color-burn;
     width: 30px;
     height: 30px;

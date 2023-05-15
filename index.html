@@ -13,6 +13,10 @@
 
     <link rel="stylesheet" href="style.css">
     <title>Udemy Local</title>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+   <!-- sweetalert2 links -->
+   <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'></link>  
+   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 
 <body>
@@ -25,15 +29,49 @@
         <p id="header-p2">Teach on Udemy</p>
         <i class="fa-solid fa-cart-shopping"></i>
         <button class="header-button btn-1" type="button" onclick="Open_Login_Div()">Log in</button>
-        <button class="header-button btn-2" type="button" >Sign up</button>
+        <button class="header-button btn-2" type="button" onclick="Open_Signup_Div()">Sign up</button>
     </div>
 
-            <!-- LogIn Div Starts Here -->
+
+    <!-- SignUp Div Starts Here -->
+
+    <div id="signup_div" style="display: none;">
+        <form>
+            <img id="cross_sign_1" onclick="Hide_Login_Div()" src="https://cdn.onlinewebfonts.com/svg/img_406531.png"
+                alt="cancel_div_icon" />
+
+            <h1>Create an account</h1>
+
+            <div class="login_inner_divs">
+                <label>Full Name:</label>
+                <input type="text" placeholder="Enter your name here:" />
+            </div>
+
+            <div class="login_inner_divs">
+                <label>Email Address:</label>
+                <input type="email" placeholder="Enter your email here:" />
+            </div>
+
+            <div class="login_inner_divs">
+                <label>Password:</label>
+                <input type="password" placeholder="Enter your password here:" />
+            </div>
+
+            <div class="login_inner_divs">
+                <button type="button" id="login_btn" onclick="signUp()">Sign Up Now!</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- SignUp Div Ends Here -->
+
+    <!-- LogIn Div Starts Here -->
 
     <div id="login_div" style="display: none;">
         <form>
-            <img id="cross_sign" onclick="Hide_Login_Div()" src="https://cdn.onlinewebfonts.com/svg/img_406531.png" alt="cancel_div_icon"/>
-            
+            <img id="cross_sign_2" onclick="Hide_Login_Div()" src="https://cdn.onlinewebfonts.com/svg/img_406531.png"
+                alt="cancel_div_icon" />
+
             <h1>Welcome to Udemy</h1>
             <div class="login_inner_divs">
                 <label>Username or Email:</label>
@@ -51,7 +89,8 @@
         </form>
     </div>
 
-            <!-- LogIn Div Ends Here -->
+    <!-- LogIn Div Ends Here -->
+
 
 
 
@@ -504,8 +543,8 @@
             </div>
         </div>
         <img id="footer-image" src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy-inverted.svg" alt="">
-         <p>&COPY; 2022 Udemy,Inc.</p>
-         <button id="footer-button">English</button>
+        <p>&COPY; 2022 Udemy,Inc.</p>
+        <button id="footer-button">English</button>
     </div>
 
     <script src="script.js"></script>
